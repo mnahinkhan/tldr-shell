@@ -7,5 +7,5 @@ do
     filename="${f%.*}"
     printf "# %s\n\n\`\`\`%s\n" "$filename" "$f" > "$filename".md
     cat "$f" >> "$filename".md
-    printf "\`\`\`\n[Back to main](/)" >> "$filename".md
+    printf "\`\`\`\n[Back to main](index)" >> "$filename".md
 done
