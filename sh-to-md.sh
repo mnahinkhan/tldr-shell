@@ -5,7 +5,7 @@
 for f in *.sh
 do
     filename="${f%.*}"
-    printf "# %s\n\n\`\`\`%s\n" "$filename" "$f" > "$filename".md
+    printf "# %s\n\n\`\`\`bash\n" "$filename" > "$filename".md
     cat "$f" >> "$filename".md
     printf "\`\`\`\n[Back to main](index)" >> "$filename".md
 done
