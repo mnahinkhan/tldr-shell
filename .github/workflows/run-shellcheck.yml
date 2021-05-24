@@ -1,9 +1,9 @@
-name: run-shellcheck
+name: Run Shellcheck
 on: [push]
 jobs:
-  check-bats-version:
+  run-shellcheck:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - run: apt install shellcheck
+      - run: sudo apt install shellcheck
       - run: shellcheck *.sh
