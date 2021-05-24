@@ -1,4 +1,6 @@
 # tldr-shell
+![Shellcheck](https://github.com/mnahinkhan/tldr-shell/actions/workflows/run-shellcheck.yml/badge.svg)
+
 Examples of common shell script patterns
 
 This repo is meant as a quick reference for people seeking syntax for common Bash patterns.
