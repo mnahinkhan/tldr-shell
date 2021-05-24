@@ -1,6 +1,6 @@
 # for
 
-```for.sh
+```bash
 #!/usr/bin/env bash
 
 # Add "img-" in front of every png image filename

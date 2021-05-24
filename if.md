@@ -1,6 +1,6 @@
 # if
 
-```if.sh
+```bash
 #!/usr/bin/env bash
 
 # Get IP info from the internet.

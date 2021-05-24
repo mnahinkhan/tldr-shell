@@ -1,6 +1,6 @@
 # gen-index
 
-```gen-index.sh
+```bash
 #!/usr/bin/env bash
 
 # Generate index.md from pre-index.md

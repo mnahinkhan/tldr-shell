@@ -1,6 +1,6 @@
 # clean
 
-```clean.sh
+```bash
 #!/usr/bin/env bash
 
 # For each .sh file in the current directory, remove the .md file with the
