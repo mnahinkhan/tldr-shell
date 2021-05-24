@@ -18,4 +18,4 @@ do
     echo " - [$filename]($filename)" >> $index_file
 done
 ```
-[Back to main](/)
+[Back to main](index)

@@ -9,4 +9,4 @@ do
    mv f "img-$f.png" 
 done
 ```
-[Back to main](/)
+[Back to main](index)

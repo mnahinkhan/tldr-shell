@@ -12,4 +12,4 @@ done
 rm index.md 2>/dev/null
 exit 0
 ```
-[Back to main](/)
+[Back to main](index)

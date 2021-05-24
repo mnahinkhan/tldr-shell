@@ -12,4 +12,4 @@ else
     echo "Error getting your IP details..."
 fi
 ```
-[Back to main](/)
+[Back to main](index)
