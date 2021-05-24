@@ -5,7 +5,7 @@
 # Otherwise, print that there are errors.
 
 if curl ipinfo.io; then
-    echo "Succeedede in getting your public IP details!"
+    echo "Succeeded in getting your public IP details!"
 else
     echo "Error getting your IP details..."
 fi
