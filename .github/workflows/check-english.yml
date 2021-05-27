@@ -1,3 +1,4 @@
+name: Check English Prose
 on: [push]
 
 jobs:
