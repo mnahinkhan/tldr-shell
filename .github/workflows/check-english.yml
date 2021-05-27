@@ -1,0 +1,10 @@
+on: [push]
+
+jobs:
+  check_spell_job:
+    runs-on: ubuntu-latest
+    name: Check English prose
+    steps:
+      - name: Check spelling
+        id: spell_check
+        uses: mnahinkhan/writegood-action@v1
