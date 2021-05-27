@@ -7,4 +7,4 @@ jobs:
     steps:
       - name: Check spelling
         id: spell_check
-        uses: mnahinkhan/writegood-action
+        uses: mnahinkhan/writegood-action@37f3a35
