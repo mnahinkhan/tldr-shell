@@ -11,13 +11,18 @@ jobs:
     - name: Generate Markdown files
       run: make all
     - name: Commit files
+      id: commit_step
       run:
         git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com";
         git config --local user.name "github-actions[bot]";
         git add *.md;
         git commit -m "Autoadd new md files";
+      continue-on-error: true
     - name: Push changes
-      uses: ad-m/github-push-action@master
-      with:
-        github_token: ${{ secrets.GITHUB_TOKEN }}
-        branch: ${{ github.ref }}
+      - if: steps.commit_step.outcome == 'success'
+          uses: ad-m/github-push-action@master
+          with:
+            github_token: ${{ secrets.GITHUB_TOKEN }}
+            branch: ${{ github.ref }}
+      - if: steps.commit_step.outcome != 'success'
+        run: exit 0
